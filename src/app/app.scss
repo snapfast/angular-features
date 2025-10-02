@@ -1,0 +1,13 @@
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    height: calc(100vh - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid red;
+}
