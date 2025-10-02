@@ -2,6 +2,19 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.0.
 
+# Uses API from Internet
+
+https://restful-api.dev/
+
+# Contains
+- routes
+- used @app - compilerOptions tsconfig.json
+- sturctural directives
+- signals (todo)
+- attribute directive (todo)
+- Two-way binding on templates-html (todo)
+- Dependency injection
+
 ## Development server
 
 To start a local development server, run:
