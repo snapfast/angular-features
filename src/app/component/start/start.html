@@ -1,21 +1,25 @@
-<p>start works!</p>
+<div>
 
+    <p>start works!</p>
 
-<ng-container *appSelect="let obj from loadMacbook">
-    <h2>Fetched Object</h2>
+    <ng-container *appSelect="let obj from loadMacbook">
+        <h2>Fetched Object</h2>
 
-    <p><strong>Id:</strong> {{ obj.id }}</p>
-    <p><strong>Name:</strong> {{ obj.name }}</p>
+        <p><strong>Id:</strong> {{ obj.id }}</p>
+        <p><strong>Name:</strong> {{ obj.name }}</p>
 
-    <div *ngIf="obj.data as d">
-        <h3>Data Fields</h3>
-        <ul>
-            <li *ngFor="let key of objectKeys(d)">
-                {{ key }}: {{ d[key] }}
-            </li>
-        </ul>
-    </div>
-</ng-container>
+        <div *ngIf="obj.data as d">
+            <h3>Data Fields</h3>
+            <div>
+                <span *ngFor="let key of objectKeys(d)">
+                    {{ key }}: {{ d[key] }}
+                </span>
+            </div>
+        </div>
+    </ng-container>
 
+    <p>
+        <a routerLink="about">go to about</a>
+    </p>
 
-<a routerLink="about">go to about</a>
+</div>
